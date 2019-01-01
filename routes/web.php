@@ -18,3 +18,11 @@ $router->get('/', function () use ($router) {
 $router->get('home', [
     'as' => 'home', 'uses' => 'HomeController@index'
 ]);
+
+$router->get('dashboard', [
+    'as' => 'dashboard', 'uses' => 'DashboardController@index'
+]);
+
+$router->get('post', [
+    'as' => 'post', 'uses' => 'PostController@index'
+]);
